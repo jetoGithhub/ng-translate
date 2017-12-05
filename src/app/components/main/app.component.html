@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <div>{{ 'HELLO' | translate:param }}</div>
+  <br />
+  <button (click)="changeLanguage('en')">Ingles</button>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <button (click)="changeLanguage('es')" >Español</button>
+  
+<router-outlet></router-outlet>
