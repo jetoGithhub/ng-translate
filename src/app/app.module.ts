@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppTranslate } from './commons/translate/translate.module'
+import { AppTranslate } from './commons/translate/translate.module';
+import { UIComponents } from 'ngUiComponents/src';
 
 
 import {TranslateModule, TranslateLoader, TranslateService} from '@ngx-translate/core';
@@ -24,6 +25,10 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     HttpClientModule,
     AppTranslate,
+    UIComponents
+  ],
+  exports:[
+    UIComponents
   ],
   providers: [],
   bootstrap: [AppComponent]

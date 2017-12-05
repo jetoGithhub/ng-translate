@@ -9,6 +9,7 @@ import {TranslateService} from '@ngx-translate/core';
 export class AppComponent {
   title = 'app';
   param = {value: 'jefferson'};
+  messages = 'El message tipo';
 
   constructor(private translate: TranslateService){
 
